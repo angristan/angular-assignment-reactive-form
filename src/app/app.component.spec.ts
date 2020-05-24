@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'devoir1'`, () => {
+  it(`should have as title 'angular-assignment-reactive-form'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('devoir1');
+    expect(app.title).toEqual('angular-assignment-reactive-form');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('devoir1 app is running!');
+    expect(compiled.querySelector('.content span').textContent).toContain('angular-assignment-reactive-form app is running!');
   });
 });

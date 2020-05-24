@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "devoir1": {
+    "angular-assignment-reactive-form": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/devoir1",
+            "outputPath": "dist/angular-assignment-reactive-form",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -63,18 +63,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "devoir1:build"
+            "browserTarget": "angular-assignment-reactive-form:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "devoir1:build:production"
+              "browserTarget": "angular-assignment-reactive-form:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "devoir1:build"
+            "browserTarget": "angular-assignment-reactive-form:build"
           }
         },
         "test": {
@@ -111,16 +111,16 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "devoir1:serve"
+            "devServerTarget": "angular-assignment-reactive-form:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "devoir1:serve:production"
+              "devServerTarget": "angular-assignment-reactive-form:serve:production"
             }
           }
         }
       }
     }
   },
-  "defaultProject": "devoir1"
+  "defaultProject": "angular-assignment-reactive-form"
 }
